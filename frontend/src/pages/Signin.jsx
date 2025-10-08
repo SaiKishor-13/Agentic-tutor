@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
-const Signup = () => {
+const Signin = () => {
   const [formData, setFormData] = useState({
-    name: "",
     email: "",
     password: "",
   });
@@ -13,36 +12,21 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Signup Data:", formData);
-    alert("Signup successful! (Mock action)");
+    console.log("Sign In Data:", formData);
+    alert("Login successful! (Mock action)");
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4">
       <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
         <h2 className="text-2xl font-bold text-center mb-2 text-gray-800">
-          Create Account
+          Welcome Back
         </h2>
         <p className="text-gray-600 text-center mb-6">
-          Join AyraLearn and start learning Malayalam easily.
+          Login to continue learning with AyraLearn.
         </p>
 
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-medium mb-1">
-              Full Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Enter your name"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black"
-              required
-            />
-          </div>
-
           <div className="mb-4">
             <label className="block text-gray-700 font-medium mb-1">
               Email
@@ -67,7 +51,7 @@ const Signup = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder="Create a password"
+              placeholder="Enter your password"
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black"
               required
             />
@@ -77,17 +61,17 @@ const Signup = () => {
             type="submit"
             className="w-full bg-black text-white font-medium py-2 rounded-lg hover:bg-gray-800 transition"
           >
-            Sign Up
+            Sign In
           </button>
         </form>
 
         <p className="text-gray-600 text-sm text-center mt-4">
-          Already have an account?{" "}
+          Don’t have an account?{" "}
           <a
-            href="/signin"
+            href="/signup"
             className="text-black font-medium hover:underline"
           >
-            Log In
+            Sign Up
           </a>
         </p>
       </div>
@@ -95,4 +79,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Signin;

@@ -1,7 +1,12 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+
 
 const Home = () => {
+ 
   return (
+<>
+    <Navbar/>
     <div className="min-h-screen flex flex-col justify-center items-center bg-white text-center px-4">
       {/* Header */}
       <h1 className="text-3xl font-semibold mb-2">
@@ -13,31 +18,46 @@ const Home = () => {
         Learn Malayalam step-by-step with audio guidance, live speech feedback, and simple progress tracking.
       </p>
 
-      {/* Buttons */}
       <div className="flex flex-wrap justify-center gap-4 mb-8">
-        <button className="bg-black text-white px-5 py-2 rounded-md hover:bg-gray-800 transition">
-          Learn Letters
-        </button>
-        <button className="bg-black text-white px-5 py-2 rounded-md hover:bg-gray-800 transition">
-          Learn Words
-        </button>
-        <button className="bg-black text-white px-5 py-2 rounded-md hover:bg-gray-800 transition">
-          Learn Sentences
-        </button>
-        <button className="bg-gray-200 text-gray-700 px-5 py-2 rounded-md hover:bg-gray-300 transition">
-          Progress
-        </button>
-        <button className="bg-gray-200 text-gray-700 px-5 py-2 rounded-md hover:bg-gray-300 transition">
-          Profile
-        </button>
-      </div>
+          <a
+            href="/letters"
+            className="bg-black text-white px-5 py-2 rounded-md hover:bg-gray-800 transition"
+          >
+            Learn Letters
+          </a>
+          <a
+            href="/words"
+            className="bg-black text-white px-5 py-2 rounded-md hover:bg-gray-800 transition"
+          >
+            Learn Words
+          </a>
+          <a
+            href="/sentence"
+            className="bg-black text-white px-5 py-2 rounded-md hover:bg-gray-800 transition"
+          >
+            Learn Sentences
+          </a>
+          <a
+            href="/progress"
+            className="bg-gray-200 text-gray-700 px-5 py-2 rounded-md hover:bg-gray-300 transition"
+          >
+            Progress
+          </a>
+          <a
+            href="/profile"
+            className="bg-gray-200 text-gray-700 px-5 py-2 rounded-md hover:bg-gray-300 transition"
+          >
+            Profile
+          </a>
+        </div>
 
-      {/* Footer */}
-      <p className="text-sm text-gray-500">
-        Made with <span className="font-semibold">SpeechSynthesis</span> +{" "}
-        <span className="font-semibold">react-speech-kit</span>
-      </p>
-    </div>
+        {/* Footer */}
+        <p className="text-sm text-gray-500">
+          Made with <span className="font-semibold">SpeechSynthesis</span> +{" "}
+          <span className="font-semibold">react-speech-kit</span>
+        </p>
+      </div>
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ import React from "react";
 const Progress = () => {
   return (
     <div className="min-h-screen bg-white text-slate-900 antialiased">
-      <main className="max-w-5xl mx-auto px-6 py-12">
+      <main className="max-w-5xl mx-auto px-6 pt-24 py-12">
         <header className="mb-8">
           <h1 className="text-3xl font-semibold">Your Progress</h1>
           <p className="text-sm text-slate-500 mt-1">Track learned items and streaks.</p>

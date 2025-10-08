@@ -12,7 +12,7 @@ const Profile = () => {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 antialiased">
-      <main className="max-w-3xl mx-auto px-6 py-12">
+      <main className="max-w-3xl mx-auto px-6 pt-24 py-12">
         <header className="mb-8">
           <h1 className="text-3xl font-semibold">Profile</h1>
           <p className="text-sm text-slate-500 mt-1">
