@@ -20,7 +20,7 @@ const Signin = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4">
       <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
         <h2 className="text-2xl font-bold text-center mb-2 text-gray-800">
-          Welcome Back
+          Welcome Back 
         </h2>
         <p className="text-gray-600 text-center mb-6">
           Login to continue learning with AyraLearn.
